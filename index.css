@@ -9,6 +9,7 @@
     border: 5px solid gray;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .box {
