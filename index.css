@@ -3,18 +3,25 @@
     padding: 0;
     margin: 0;
 }
-
+/*các thuộc tính flex của container*/
 .container {
     width: 100vw;
     border: 5px solid gray;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;  /* dòng này thay thế cho 2 dòng ở trên*/
+    justify-content: flex-start; /* spce-evently chia đều treo trục ngang*/
+    align-items: flex-start;
 }
-
+/*các thuộc tính flex của item*/
+/*flex-grow
+flex-shrink
+flex-basis*/
 .box {
     height: 200px;
     padding: 10px;
+    flex-basis: 200px;
 }
 
 .box p {
@@ -22,14 +29,18 @@
     color: white;
 }
 
+
 .box-1 {
     background-color: rgb(192, 37, 10);
+    flex-grow: 1;
 }
 
 .box-2 {
     background-color: rgb(71, 255, 154);
+    flex-grow: 1;
 }
 
 .box-3 {
     background-color: rgb(240, 71, 255);
+    flex-grow: 1;
 }
